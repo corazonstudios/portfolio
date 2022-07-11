@@ -1,11 +1,192 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/style.css/main.css">
+    <title>Business Portfolio - CorazonStudios</title>
+    <style>
+        :root{
+    --color-primary-purple:#ff85e5;
+    --color-blue: #ffffff;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: var(--color-blue);
+    text-decoration: none;
+    font-family: "montserrat", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container{
+    background-image: url(https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?cs=srgb&dl=pexels-designecologist-1779487.jpg&fm=jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.body-box{
+    display: flex;
+    font-family: "montserrat", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+    background-color:rgba(0, 0, 0, 0.5);
+    height: 100%;
+    position: relative;
+    bottom: 38%;
+    backdrop-filter: blur(1rem);
+    z-index: 2;
+}
+
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+     background:  rgba(0, 0, 0, 0.6);
+    z-index: 3;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
+/* dont forget box-shadow: ; */
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    
+}
+
+.nav-links li{
+    list-style: none;
+    font-weight: 500;
+   }
+
+   h1{
+   margin-bottom: 10rem;
+   font-size: 4rem;
+   margin-right: 3rem;
+}
+   p{
+  transform: translateY(-3.5rem);
+ font-weight: 400;
+letter-spacing: 3px;
+font-size: 18px;
+}
+
+.divider{
+     display: flex;
+    position: absolute;
+     background-color: rgb(255, 255, 255);
+ width: 40%;
+ height: .3vh;
+transform: translate(3px);
+bottom: 320px;
+}
+
+ span{
+    color: #ff85e5;
+}
+
+
+.button {
+
+  width: 162px;
+  height: 51px;
+  border: 2px solid #fff;
+  margin: 0;
+border: 2px solid #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: none;
+  color: #fff;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+border-radius: 20px;
+font-weight: 600;
+letter-spacing: .5px;
+}
+
+ 
+    .button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ff85e5;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+   border-radius: 20px;
+ }
+    
+  .button:hover {
+    border-radius: 20px;
+    border-color: transparent; }
+    .button:hover:before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1); }
+    button:hover i {
+      -webkit-transform: translateX(4px);
+      transform: translateX(4px); 
+    }
+      
+    </style>
+
 </head>
+
 <body>
-    <img src="/pexels-designecologist-1779487.jpg" width="100%" height="100%" alt="image is here">
+    <div class="bg-image"></div>
+    <div class="container">
+        <nav>
+            <div class="navbar-container">
+                <h4><a href="/index/main.html">Corazon<span>Studios</span></a></h4>
+            </div>
+
+
+            <ul class="nav-links">
+                <li><a class="active" href="/index/main.html">Home</a></li>
+                <li><a href="/index/about.html" target="_blank">About Us</a></li>
+                <li><a href="/index/contact.html" target="_blank">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="body-box">
+            <div class="text-content">
+                <h1 class="hero-header"> <span>Grow your</span> <br> Business with us</h1>
+                <p>Graphic Design. Website Design. Photography.</p>
+                <div class="divider">
+                </div>
+                <a href="/index/contact.html" target="_blank" class="button">Hire us</a>
+            </div>
+        </div>
+
+    </div>
+
 </body>
+
 </html>
