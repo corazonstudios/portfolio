@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="/style.css/main.css">
     <title>Business Portfolio - CorazonStudios</title>
     <style>
-        :root{
+         :root{
     --color-primary-purple:#ff85e5;
     --color-blue: #ffffff;
-}
-
+} 
+ 
 *{
     margin: 0px;
     padding: 0px;
@@ -26,7 +26,7 @@ html, body {
     height: 100%;
 }
 
-.container{
+ .container{
     background-image: url(https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?cs=srgb&dl=pexels-designecologist-1779487.jpg&fm=jpg);
     height: 100%;
     background-position: center;
@@ -35,38 +35,37 @@ html, body {
     background-attachment: scroll;
 }
 
-.body-box{
+ .body-box{
     display: flex;
     font-family: "montserrat", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
     align-items: center;
     justify-content: center;
     margin-top: 250px;
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color:rgba(0, 0, 0, 0.7);
     height: 100%;
     position: relative;
-    bottom: 38%;
+    bottom: 250px;
     backdrop-filter: blur(1rem);
-    z-index: 2;
+  
 }
 
-nav{
+ nav{
     position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
      background:  rgba(0, 0, 0, 0.6);
-    z-index: 3;
-    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
-/* dont forget box-shadow: ; */
-}
+    z-index: 5;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.5);
+} 
 
 .nav-links{
     display: flex;
     justify-content: space-around;
     width: 50%;
     
-}
+} 
 
 .nav-links li{
     list-style: none;
@@ -74,31 +73,56 @@ nav{
    }
 
    h1{
-   margin-bottom: 10rem;
-   font-size: 4rem;
-   margin-right: 3rem;
-}
-   p{
-  transform: translateY(-3.5rem);
- font-weight: 400;
-letter-spacing: 3px;
-font-size: 18px;
+   margin-bottom: 13rem;
+   font-size: 3rem;
+  
+} 
+@media screen and (min-width: 300px) and (max-width:700px) {
+  h1{
+      font-size: 2.4rem;
+      line-height: 4rem;
+  }
+
 }
 
 .divider{
      display: flex;
     position: absolute;
      background-color: rgb(255, 255, 255);
- width: 40%;
+ width: 400px;
  height: .3vh;
 transform: translate(3px);
-bottom: 320px;
+bottom: 368px;
+}
+@media screen and (min-width: 300px) and (max-width:700px) {
+  .divider{
+  width: 330px;
+   bottom: 375px;
+  }
+
+}
+   .para{
+  transform: translateY(-125px);
+ font-weight: 400;
+font-size: 15px;
+}
+@media screen and (min-width: 300px) and (max-width:700px) {
+  .para{
+ font-size: 14.5px;
+  font-weight: 305px;
+    transform: translateY(-125px);
+  }
+ 
 }
 
- span{
+
+ .grow{
     color: #ff85e5;
+    font-size: larger;
 }
-
+.studios{
+  color: #ff85e5;
+}
 
 .button {
 
@@ -106,7 +130,6 @@ bottom: 320px;
   height: 51px;
   border: 2px solid #fff;
   margin: 0;
-border: 2px solid #fff;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -126,7 +149,14 @@ font-weight: 600;
 letter-spacing: .5px;
 }
 
- 
+@media screen and (min-width: 300px) {
+  .button{
+   
+   bottom: 50px;
+  }
+
+}
+
     .button:before {
     content: "";
     position: absolute;
@@ -135,7 +165,7 @@ letter-spacing: .5px;
     left: 0;
     right: 0;
     bottom: 0;
-    background: #ff85e5;
+    background: #ff28d0;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
@@ -145,6 +175,7 @@ letter-spacing: .5px;
    border-radius: 20px;
  }
     
+ 
   .button:hover {
     border-radius: 20px;
     border-color: transparent; }
@@ -156,37 +187,79 @@ letter-spacing: .5px;
       transform: translateX(4px); 
     }
       
+    /* .about-box{
+      position: relative;
+      background-color: #2d2c2d;
+      color: white;
+      padding: 1rem;
+      line-height: 1.5em;
+    }
+    .vision-box{
+      position: relative;
+      background-color: #ff28d0;
+      color: white;
+      padding: 1rem;
+      line-height: 1.5em;
+    } */
+
     </style>
 
 </head>
 
 <body>
-    <div class="bg-image"></div>
+
     <div class="container">
         <nav>
             <div class="navbar-container">
-                <h4><a href="/index/main.html">Corazon<span>Studios</span></a></h4>
+                <h4><a href="/index/main.html">Corazon<span class="studios">Studios</span></a></h4>
             </div>
 
 
             <ul class="nav-links">
                 <li><a class="active" href="/index/main.html">Home</a></li>
-                <li><a href="/index/about.html" target="_blank">About Us</a></li>
-                <li><a href="/index/contact.html" target="_blank">Contact Us</a></li>
+                <li><a href="/index/about.html" target="_blank">About</a></li>
+                <li><a href="/index/contact.html" target="_blank">Contact</a></li>
             </ul>
         </nav>
         <div class="body-box">
             <div class="text-content">
-                <h1 class="hero-header"> <span>Grow your</span> <br> Business with us</h1>
-                <p>Graphic Design. Website Design. Photography.</p>
-                <div class="divider">
-                </div>
+                <h1 class="hero-header"> <span class="grow">Grow your</span> <br> Business with us</h1>
+                <p class="para">Graphic Design. Website Design. Photography.</p>
+                <div class="divider"></div>
                 <a href="/index/contact.html" target="_blank" class="button">Hire us</a>
             </div>
         </div>
 
     </div>
+    <!-- <section>
+     <div class="about-content">
+    <div class="about-box">
+        <h3>About Us</h3> <br>
+      <p>Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Modi, delectus, earum
+        dignissimos, officiis explicabo reiciendis
+        incidunt eveniet eos eaque inventore
 
+        suscipit voluptas? Molestiae vel esse
+        laborum mollitia itaque animi sunt
+        harum, reiciendis iusto consecte
+      </p>
+  </div>
+
+<div class="vision-box">
+    <h3>Our Vision</h3> <br>
+    <p>Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Modi, delectus, earum
+        dignssimos, officiis explicabo reiciendis
+        incidunt eveniet eos eaque inventore
+
+        suscipit voluptas? Molestiae vel esse
+        laborum mollitia itaque animi sunt
+        harum, reiciendis iusto consecte
+    </p>
+   </div>
+   </div>
+</section> -->
 </body>
 
 </html>
