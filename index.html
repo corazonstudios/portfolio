@@ -10,9 +10,9 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Overpass:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     
-    <style>
-   
-        :root{
+<style>
+
+:root{
     --color-primary-purple:#ff85e5;
     --color-white:white;
 } 
@@ -248,13 +248,14 @@ overflow: hidden;
     padding: 40px 20px;
 }
 #about .col-left img{
-    max-width: 80%;
+    width: 400px;
  
 }
 
 #about .col-right h2{
     font-size: 1.5rem;
     font-weight: 500;
+
    }
 
 #about .col-right h1{
@@ -413,7 +414,7 @@ fieldset {
 }
 
 .contact .contact-items{
-    width: 30 0px;
+    width: 30px 0px;
 }
 
 .contact .contact-item{
@@ -429,8 +430,27 @@ fieldset {
   transition: .3s ease box-shadow;
     box-shadow: 0px 0px 18px 0 #0000002c;
 }
+.contact .contact-item1{
+    flex-direction: column;
+    width: 80%;
+    padding: 20px;
+   
+    text-align: center;
+    border-radius: 10px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  transition: .3s ease box-shadow;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+
+}
 
 .contact .contact-item:hover{
+    box-shadow: 0px 0px 5px 0 #0000002c;
+
+}
+.contact .contact-item1:hover{
     box-shadow: 0px 0px 5px 0 #0000002c;
 
 }
@@ -456,7 +476,13 @@ font-weight: 350;
     left: 20px;
 }
 
-
+section .top{
+    text-decoration: none;
+    color: #000000;
+float: right;
+transform: translateY(-20px);
+margin-right: 20px;
+}
 
 #footer{
    
@@ -572,6 +598,12 @@ transition: .3s ease background-color;
 
 @media only screen and (min-width:768px){
    
+
+#about .col-right{
+   transform: translateX(40px);
+   }
+
+
     #footer .brand p {
     font-size: 2rem;
    font-weight:500;
@@ -590,6 +622,23 @@ transition: .3s ease background-color;
      left: 15rem;
         position: relative;
    }
+
+.contact .contact-item1{
+    flex-direction: column;
+    width: 80%;
+    padding: 20px;
+    transform: translateX(25px);
+    text-align: center;
+    border-radius: 10px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  transition: .3s ease box-shadow;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+
+}
+
 
 
 #services .service-bottom .service-item{
@@ -646,9 +695,10 @@ left: 140px;
 
 
 
-        
-    </style>
-    
+
+</style>
+
+
 </head>
 <body>
 
@@ -700,7 +750,7 @@ left: 140px;
         <div>
             <h1>Helping Businesses<br>to grow will<span> Always <br> Be Our Drive.</span></h1>
            
-            <a href="#" type="button" class="cta">Let's talk</a>
+            <a href="#contact" type="button" class="cta">Let's talk</a>
         </div>
     </div>
 </section>
@@ -766,7 +816,7 @@ left: 140px;
     <div class="about container">
         <div class="col-left">
           <div class="about-img">
-            <img src="https://i.im.ge/2022/07/20/FO6TRT.jpg" alt="glowing=image">
+           <img src="https://images.pexels.com/photos/3184433/pexels-photo-3184433.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="FO6TRT.jpg"></a>
           </div>  
         </div>
         <div class="col-right">
@@ -802,11 +852,11 @@ abroad. </p>
 
 <!-- success page -->
 
-<input type="hidden" name="_next" value="#" >
+ <input type="hidden" name="_next" value="https://corazonstudios.github.io/thanks.html" >
 
         <h4>Get in Touch with us</h4>
         <fieldset>
-            <input placeholder="Full name" type="text" tabindex="1" required autofocus name="Full&nbsp;Name">
+            <input placeholder="Full name" type="text" tabindex="1" required name="Full&nbsp;Name">
         </fieldset>
         <fieldset>
             <input placeholder="Your Email Address" type="email" tabindex="2" required name="Email&nbsp;Address">
@@ -818,7 +868,7 @@ abroad. </p>
             <textarea placeholder="Type in here what you want us to do for you." tabindex="4" name="Message" required></textarea>
         </fieldset>
         <fieldset>
-            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            <button type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
         </fieldset>
     </form>
 </div>
@@ -844,7 +894,7 @@ abroad. </p>
             </div>
             </div>
 
-<div class="contact-item">
+<div class="contact-item1">
     <div class="icon"> <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new--v1.png" /> </div>
     <div class="contact-info">
         <h1>Instagram</h1>
@@ -853,7 +903,7 @@ abroad. </p>
     </div>
 </div>
 
-<div class="contact-item">
+<div class="contact-item1">
     <div class="icon"> <img src="https://img.icons8.com/windows/32/000000/behance.png" /> </div>
     <div class="contact-info">
         <h1>Portfolio Link</h1>
@@ -865,6 +915,7 @@ abroad. </p>
         </div>
     </div>
 
+    <h3 class="top"><a href="#hero">Go to the Top</a></h3>
 </section>
 <!-- end Contact section -->
 
@@ -890,7 +941,8 @@ abroad. </p>
         
         <!-- success page -->
         
-        <input type="hidden" name="_next" value="#">
+        <input type="hidden" name="_next" value="https://corazonstudios.github.io/thanks.html">
+
 <input type="email" name="email" id="email" placeholder="Enter Your Email Address" class="email">
    <input type="submit" name="submit" value="Subscribe" class="button">
 </form>
