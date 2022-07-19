@@ -1,16 +1,23 @@
+
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Corazon studios website</title>
-  <link rel="stylesheet" href="style.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Overpass:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corazon studios website</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Overpass:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    
+  <style>
+    
+   :root{
+    --color-primary-purple:#ff85e5;
+    --color-white:white;
+} 
+ 
 
-<style>
 
 *{
     margin: 0;
@@ -21,6 +28,9 @@
 html{
     font-size: 10px;
     font-family: 'montserrat', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    
 }
 
 a{
@@ -42,9 +52,9 @@ justify-content: center;
 }
 
 
+
    
  nav{
-    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -52,7 +62,7 @@ justify-content: center;
      background-image: linear-gradient(60deg, #0c0c0c 0%, #4f0441 100%);
     z-index: 5;
     box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.9);
-   
+   position: relative;
 } 
 
 
@@ -81,7 +91,7 @@ nav a span{
 
 @media only screen and (min-width:350px) {
     nav a{
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
  }
 }
@@ -91,8 +101,6 @@ nav a span{
     nav a{
     font-size: 2rem;
  }
-
-
 
 
 }
@@ -171,7 +179,6 @@ color: black;
 }
 
 
-
          #services .services{
     flex-direction: column;
     text-align: center;
@@ -183,7 +190,7 @@ color: black;
 #services .section-title{
     font-size: 5rem;
     color: #ff28d0; 
-    margin-bottom: 10px;
+   
     text-align: center;
 }
 
@@ -204,7 +211,7 @@ color: black;
     flex-direction: column;
     padding: 30px;
     border-radius: 10px;
-   background-color: #ff28d0;
+   background-image: linear-gradient(60deg, #de2fb5 0%, #ff28d0 100%);
     background-size: cover;
     margin: 10px 5%;
     position: relative;
@@ -258,17 +265,156 @@ overflow: hidden;
    }
 
 
-#contact .contact{
+
+contact-form {
+ margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+  color: #777;
+ 
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: #f2f2f2;
+  padding: 25px;
+ 
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: black;
+  text-align: center;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(58, 58, 58);
+  text-align: center;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+  color: black;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background:black;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #ff28d0;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+
+.contact .contacts{
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-#contact .contact-items{
+.contact .contact-items{
     width: 30 0px;
 }
 
-#contact .contact-item{
+.contact .contact-item{
     flex-direction: column;
     width: 80%;
     padding: 20px;
@@ -282,33 +428,37 @@ overflow: hidden;
     box-shadow: 0px 0px 18px 0 #0000002c;
 }
 
-#contact .contact-item:hover{
+.contact .contact-item:hover{
     box-shadow: 0px 0px 5px 0 #0000002c;
 
 }
 
-#contact .icon{
+.contact .icon{
     width: 40px;
     margin: 0 auto;
     margin-bottom: 10px;
 }
-#contact .contact-info h1{
+.contact .contact-info h1{
   font-size: 1.6rem;
   color: #ff28d0;
 }
-#contact .contact-info h2{
-font-weight: 500;
+.contact .contact-info h2{
+font-weight: 350;
 }
 
-#contact .section-title{
+.contact .section-title{
    font-size: 5rem;
     color: #ff28d0;
+    padding-bottom: 20px;
+    position: relative;
+    left: 20px;
 }
 
 
 
 #footer{
-   background-image: linear-gradient(60deg, #29323c 0%, #4f0441 100%);
+   
+   background-image: linear-gradient(60deg, #de2fb5 0%, #ff28d0 100%);
 color: white;
 }
 
@@ -320,9 +470,9 @@ color: white;
 }
 
 #footer .brand{
-   font-size: 2rem;
-    letter-spacing:.1rem;
-    margin-bottom: 5px;
+   font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 25px;
     
 }
 #footer h2{
@@ -359,11 +509,42 @@ color: white;
     
 }
 
+#footer .newsletter form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
 
+#footer .newsletter .email{
+    display: inline-block;
+    width: 100%;
+    border:none;
+    padding: 14px 130px 14px 15px;
+    outline:none;
+    border-radius: 30px;
+    
+}
+
+#footer .newsletter .button{
+    position: absolute;
+    display:inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #ff28d0;
+    color: white;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #a2a2a2;
+     top:6px;
+right: 6px;
+cursor: pointer;
+transition: .3s ease background-color;
+
+    }
 
 @media only screen and (min-width:768px){
    
-  
+ 
 
     #hero .cta{
         font-size: 2rem;
@@ -396,7 +577,8 @@ margin: 2%;
 }
 
 
-#contact .contact{
+
+.contact .contacts{
     flex-direction: column;
     padding: 100px 0;
     align-items: center;
@@ -404,18 +586,22 @@ margin: 2%;
     min-height: 20vh;
 }
 
-#contact .contact-items{
+.contact .contact-items{
     width: 100%;
     display: flex;
     flex-direction: row;
 }
-#contact .section-title{
+.contact .section-title{
 position: relative;
 left: 140px;
 }
    }
 
 
+
+
+   
+  
 
 @media only screen and (min-width:1200px) {
     #services .service-bottom .service-item{
@@ -431,19 +617,17 @@ left: 140px;
 
 
 
-
-
-
-</style>
-
-
+ 
+    
+  </style>
+  
+  
 </head>
-
 <body>
 
-  <!-- Header -->
+<!-- Header -->
 
-  <!-- <section id="header">
+<!-- <section id="header">
     <div class="header container">
         <div class="nav-bar">
             <div class="brand">
@@ -466,172 +650,225 @@ left: 140px;
 </section>
  -->
 
-  <nav>
+<nav>
     <div class="navbar-container">
-      <h4><a href="#">Corazon<span>Studios</span></a></h4>
+        <h4><a href="#hero">Corazon<span>Studios</span></a></h4>
     </div>
-
-    <!-- <div class="hamburger">
-        <img src="https://img.icons8.com/ios-glyphs/30/000000/menu--v1.png"/>
-    </div> -->
-
     <ul class="nav-links">
-      <li><a class="#" href="#">Home</a></li>
-      <li><a class="#" href="#">Services</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+        <li><a class="active" href="#hero">Home</a></li>
+        <li><a class="#" href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
-  </nav>
+</nav>
 
 
-  <!-- End Header -->
+<!-- End Header -->
 
 
 
-  <!-- Start Hero Section -->
-  <section id="hero">
+<!-- Start Hero Section -->
+<section id="hero">
     <div class="hero container">
-      <div>
-        <h1>Hello,</h1>
-        <h1>My Name is</h1>
-        <h1> <span> Miracle</span></h1>
-        <a href="#" type="button" class="cta">Let's talk</a>
-      </div>
+        <div>
+            <h1>Helping Businesses<br>to grow will<span> Always <br> Be Our Drive.</span></h1>
+           
+            <a href="#" type="button" class="cta">Let's talk</a>
+        </div>
     </div>
-  </section>
-  <!-- End Hero Section -->
+</section>
+<!-- End Hero Section -->
 
-  <!-- service section -->
-  <section id="services">
+<!-- service section -->
+<section id="services">
     <div class="services container">
-      <div class="service-top">
-        <h1 class="section-title">Our Services</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quas libero,
-          labore fugiat eaque perspiciatis. Ratione impedit dolor amet facilis!</p>
-      </div>
-
+        <div class="service-top">
+            <h1 class="section-title">Our Services</h1>
+        </div>
+        
       <div class="service-bottom">
         <div class="service-item">
-
-          <div class="icon"><img src="https://img.icons8.com/ios/50/000000/windows10-personalization.png" />
-          </div>
-          <h2>Graphic Design</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore delectus recusandae aspernatur hic quae?
-            Blanditiis odio quis assumenda sequi itaque.
-          </p>
+            
+            <div class="icon"><img src="https://img.icons8.com/ios/50/000000/windows10-personalization.png" />
+         </div>
+            <h2>Graphic Design</h2>
+            <P> as a field of application, has different areas of knowledge focused on any visual communication system. For example, it can be applied
+            in advertising strategies to give your brand a constant social-media 
+            appearance.</P>
         </div>
         <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/ios-filled/50/000000/developer-mode.png" />
-          </div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore delectus recusandae aspernatur hic quae?
-            Blanditiis odio quis assumenda sequi itaque.
-          </p>
-        </div>
-
-        <div class="service-item">
-          <div class="icon"><img
-              src="https://img.icons8.com/external-sbts2018-outline-sbts2018/58/000000/external-newsletter-seo-4.-2-sbts2018-outline-sbts2018-3.png" />
-          </div>
-          <h2>Newsletter</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore delectus recusandae aspernatur hic quae?
-            Blanditiis odio quis assumenda sequi itaque.
-          </p>
+            <div class="icon"><img src="https://img.icons8.com/ios-filled/50/000000/developer-mode.png"/>
+         </div>
+            <h2>Web Design/Development</h2>
+            <p>Web design and Development is an umbrella term that describes the process of creating a website. Like the name suggests, it involves two major skill sets: web design
+                and web development. Web design determines the look and feel of a website, while development determines how it functions.
+            </p>
         </div>
 
         <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/ios/50/000000/camera--v3.png" />
-          </div>
-          <h2>Photography</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore delectus recusandae aspernatur hic quae?
-            Blanditiis odio quis assumenda sequi itaque.
-          </p>
+            <div class="icon"><img
+                src="https://img.icons8.com/external-sbts2018-outline-sbts2018/58/000000/external-newsletter-seo-4.-2-sbts2018-outline-sbts2018-3.png" />
+         </div>
+            <h2>Newsletter</h2>
+            <p>Newsletters are a common tool used by businesses and organizations to reach
+            out to their network of clients, prospects, and subscribers with important and practical
+            information. Newsletters give you direct access to your readers' inboxes, allowing
+            you to share engaging content, promote deals, and drive more traffic to your website.
+            </p>
+        </div>
+
+        <div class="service-item">
+            <div class="icon"><img src="https://img.icons8.com/ios/50/000000/camera--v3.png" />
+         </div>
+            <h2>Photography</h2>
+            <p>Photography has become a "must need" for businesses these days, but it is less likely that you would
+                find a professional photographer, we have broken that barrier as our firm has several professional photographers at our dispatch
+                for your service.
+            </p>
         </div>
 
       </div>
-
+  
     </div>
+       
+</section>
+<!-- end of service section -->
 
-  </section>
-  <!-- end of service section -->
-
-  <!-- About sections -->
-  <section id="about">
+<!-- About sections -->
+<section id="about">
     <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="/IMG_8cc491 - Copy.jpg" alt="glowing-image">
+        <div class="col-left">
+          <div class="about-img">
+            <img src="/IMG_8cc491 - Copy.jpg" alt="glowing-image">
+          </div>  
         </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">About Us</h1>
+        <div class="col-right">
+            <h1 class="section-title">About Us</h1>
+       
+         <h2>Corazon Studios is an Online Digital firm</h2>
+<p>that started August 2018, with the desire to help and support small businesses, which we have been achieving all these years.
+    Our mission is to give our clients premium services at considerate rate to help them grow and be known among competitors home and 
+abroad. </p>
 
-        <h2><span>Corazon </span>Studios is an Online Digital firm</h2>
-        <p>who takes pleasure in working for her client. Our mission is to give our clients
-          premium services at cheaper rate to help them grow and be known among competitors
-          home and abroad. We know that we are doing business with you, but our ultimate goal
-          is to help see that your needs are met at all costs with the budget you have. Contact us
-          today!</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact section -->
-
-
-  <section id="contact">
-    <div class="contact container">
-      <div>
-        <h1 class="section-title">Contact Us</h1>
-        <div class="contact-items">
-          <div class="contact-item">
-            <div class="icon"> <img src="https://img.icons8.com/ios/50/000000/windows10-personalization.png" /> </div>
-            <div class="contact-info">
-              <h1>Phone</h1>
-              <h2>+234 807 423 8325</h2>
-              <h2>+234 708 171 5281</h2>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="icon"> <img src="https://img.icons8.com/ios/50/000000/windows10-personalization.png" /> </div>
-            <div class="contact-info">
-              <h1> Email Address</h1>
-              <h2>corazonstudios @gmail.com</h2>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
+</section>
+
+<!-- Contact section -->
+
+
+
+<section class="contact">
+    <div class="contacts container">
+        <div>
+            <h1 class="section-title">Contact Us</h1>
+
+<div class="contact-form">
+    <form id="contact" action="https://formsubmit.co/corazonstudios@gmail.com" method="post">
+       
+        <!-- honeypot -->
+        <input type="text" name="_honey" style="display: none;">
+       
+<!-- captcha -->
+
+<input type="hidden" name="_captcha" value="false">
+
+<!-- success page -->
+
+<input type="hidden" name="_next" value="#" >
+
+        <h4>Get in Touch with us</h4>
+        <fieldset>
+            <input placeholder="Full name" type="text" tabindex="1" required autofocus name="Full&nbsp;Name">
+        </fieldset>
+        <fieldset>
+            <input placeholder="Your Email Address" type="email" tabindex="2" required name="Email&nbsp;Address">
+        </fieldset>
+        <fieldset>
+            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" name="Phone&nbsp;Number">
+        </fieldset>
+        <fieldset>
+            <textarea placeholder="Type in here what you want us to do for you." tabindex="4" name="Message" required></textarea>
+        </fieldset>
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+    </form>
+</div>
+
+
+
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="icon"> <img src="https://img.icons8.com/ios/50/000000/windows10-personalization.png" /> </div>
+               <div class="contact-info">
+                <h1>Phone</h1>
+                <h2>+234 807 423 8325</h2>
+                <h2>+234 708 171 5281</h2>
+               </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"> <img src="https://img.icons8.com/ios/50/000000/windows10-personalization.png" /> </div>
+               <div class="contact-info">
+                <h1> Email Address</h1>
+                <h2>corazonstudios @gmail.com</h2>
+               </div>
+            </div>
+            </div>
+        </div>
     </div>
 
-  </section>
-  <!-- end Contact section -->
+</section>
+<!-- end Contact section -->
 
 
 
-  <!-- footer section -->
+<!-- footer section -->
 
-  <section id="footer">
-    <div class="footer container">
-      <div class="brand">
+<section id="footer">
+<div class="footer container">
+<div class="brand">
+    <h1>Subscribe to our NEWSLETTER to receiver Quality Offers</h1>
+</div>
+
+<div class="newsletter">
+    <form action="https://formsubmit.co/corazonstudios@gmail.com" method="post">
+
+        <!-- honeypot -->
+        <input type="text" name="_honey" style="display: none;">
+        
+        <!-- captcha -->
+        
+        <input type="hidden" name="_captcha" value="false">
+        
+        <!-- success page -->
+        
+        <input type="hidden" name="_next" value="#">
+<input type="email" name="email" id="email" placeholder="Enter Your Email Address" class="email">
+   <input type="submit" name="submit" value="Subscribe" class="button">
+   
+</form>
+</div>
+
+    <!-- <div class="brand">
         <h1>Corazon <span>Studios</span></h1>
-      </div>
-      <h2>Your complete Web Solution</h2>
-      <div class="social-icon">
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/clouds/100/228BE6/instagram-new--v3.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="#"> <img src="https://img.icons8.com/bubbles/50/000000/behance.png" /> </a>
-        </div>
-      </div>
-      <p>Copyright &copy; 2021 corazonstudios. All rights reserved</p>
     </div>
-  </section>
+    <h2>Your complete Web Solution</h2>
+    <div class="social-icon">
+        <div class="social-item">
+            <a href="#"><img src="https://img.icons8.com/clouds/100/228BE6/instagram-new--v3.png" /></a>
+        </div>
+        <div class="social-item">
+            <a href="#"> <img src="https://img.icons8.com/bubbles/50/000000/behance.png" /> </a>
+        </div>
+    </div>
+    <p>Copyright &copy; 2021 corazonstudios. All rights reserved</p> -->
+</div>
+</section>
 
 
 
-  <!-- end footer section -->
+<!-- end footer section -->
 
-</body>
-
+</body> 
 </html>
