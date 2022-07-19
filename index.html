@@ -10,9 +10,9 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Overpass:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     
-  <style>
-    
-   :root{
+    <style>
+   
+        :root{
     --color-primary-purple:#ff85e5;
     --color-white:white;
 } 
@@ -81,7 +81,7 @@ justify-content: center;
 
 nav a{
      color: white;
-     font-size: 1.2rem;
+     font-size: 1rem;
 }
 nav a span{
      color: #ff28d0;
@@ -91,9 +91,11 @@ nav a span{
 
 @media only screen and (min-width:350px) {
     nav a{
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 500;
  }
+
+ 
 }
 
 
@@ -465,16 +467,41 @@ color: white;
 #footer .footer{
     min-height: 200px;
     flex-direction: column;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 50px;
 }
 
 #footer .brand{
    font-size: 1rem;
     font-weight: 300;
-    margin-bottom: 25px;
     
+    transform: translateY(55px);
 }
+
+
+@media only screen and (min-width:350px) {
+
+
+
+   #footer .brand p {
+    font-size: 1.1rem;
+   font-weight:500;
+ }
+   #footer .newsletter .para{
+    font-size: 1.1rem;
+   padding-top: 50px;
+   position: relative;
+   left: 13%;
+   transform: translateY(20px);
+ }
+#footer .newsletter form{
+    position: relative;
+padding-top: 50px;
+ transform: translateY(40px);
+}
+}
+
+
 #footer h2{
     padding: 1px;
     font-size: 1rem;
@@ -521,7 +548,7 @@ color: white;
     border:none;
     padding: 14px 130px 14px 15px;
     outline:none;
-    border-radius: 30px;
+    border-radius: 303px;
     
 }
 
@@ -535,16 +562,21 @@ color: white;
     background-color: #ff28d0;
     color: white;
     box-shadow: 0px 0px 5px #000, 0px 0px 15px #a2a2a2;
-     top:6px;
-right: 6px;
+     top:55px;
+right: 11px;
 cursor: pointer;
 transition: .3s ease background-color;
 
     }
 
+
 @media only screen and (min-width:768px){
    
- 
+    #footer .brand p {
+    font-size: 2rem;
+   font-weight:500;
+ }
+
 
     #hero .cta{
         font-size: 2rem;
@@ -609,19 +641,14 @@ left: 140px;
         margin: 1%;
     }
 
-    .hamburger{
-    display: none;
-}
-
 }
 
 
 
- 
+
+        
+    </style>
     
-  </style>
-  
-  
 </head>
 <body>
 
@@ -739,7 +766,7 @@ left: 140px;
     <div class="about container">
         <div class="col-left">
           <div class="about-img">
-            <img src="/IMG_8cc491 - Copy.jpg" alt="glowing-image">
+            <img src="https://i.im.ge/2022/07/20/FO6TRT.jpg" alt="glowing=image">
           </div>  
         </div>
         <div class="col-right">
@@ -764,7 +791,7 @@ abroad. </p>
             <h1 class="section-title">Contact Us</h1>
 
 <div class="contact-form">
-    <form id="contact" action="https://formsubmit.co/corazonstudios@gmail.com" method="POST">
+    <form id="contact" action="https://formsubmit.co/corazonstudios@gmail.com" method="post">
        
         <!-- honeypot -->
         <input type="text" name="_honey" style="display: none;">
@@ -772,6 +799,10 @@ abroad. </p>
 <!-- captcha -->
 
 <input type="hidden" name="_captcha" value="false">
+
+<!-- success page -->
+
+<input type="hidden" name="_next" value="#" >
 
         <h4>Get in Touch with us</h4>
         <fieldset>
@@ -795,22 +826,42 @@ abroad. </p>
 
 
             <div class="contact-items">
-                <div class="contact-item">
-                    <div class="icon"> <img src="https://img.icons8.com/ios/50/000000/windows10-personalization.png" /> </div>
+            <div class="contact-item">
+                    <div class="icon"> <img src="https://img.icons8.com/ios-glyphs/30/000000/phone--v1.png" /> </div>
                <div class="contact-info">
                 <h1>Phone</h1>
                 <h2>+234 807 423 8325</h2>
                 <h2>+234 708 171 5281</h2>
                </div>
                 </div>
+            
                 <div class="contact-item">
-                    <div class="icon"> <img src="https://img.icons8.com/ios/50/000000/windows10-personalization.png" /> </div>
+                    <div class="icon"> <img src="https://img.icons8.com/material/24/000000/mail.png" /> </div>
                <div class="contact-info">
                 <h1> Email Address</h1>
                 <h2>corazonstudios @gmail.com</h2>
                </div>
             </div>
             </div>
+
+<div class="contact-item">
+    <div class="icon"> <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new--v1.png" /> </div>
+    <div class="contact-info">
+        <h1>Instagram</h1>
+        <h2>corazonstudios_</h2>
+        
+    </div>
+</div>
+
+<div class="contact-item">
+    <div class="icon"> <img src="https://img.icons8.com/windows/32/000000/behance.png" /> </div>
+    <div class="contact-info">
+        <h1>Portfolio Link</h1>
+        <a href="https://www.behance.net/3979f148"> <h2>www.behance.net/3979f148</h2></a>
+        
+    </div>
+</div>
+
         </div>
     </div>
 
@@ -824,11 +875,11 @@ abroad. </p>
 <section id="footer">
 <div class="footer container">
 <div class="brand">
-    <h1>Subscribe to our NEWSLETTER to receiver Quality Offers</h1>
+    <p>Subscribe to our NEWSLETTER to receiver Quality Offers</p>
 </div>
 
 <div class="newsletter">
-    <form action="https://formsubmit.co/corazonstudios@gmail.com" method="POST">
+    <form action="https://formsubmit.co/corazonstudios@gmail.com" method="post">
 
         <!-- honeypot -->
         <input type="text" name="_honey" style="display: none;">
@@ -837,10 +888,14 @@ abroad. </p>
         
         <input type="hidden" name="_captcha" value="false">
         
+        <!-- success page -->
+        
+        <input type="hidden" name="_next" value="#">
 <input type="email" name="email" id="email" placeholder="Enter Your Email Address" class="email">
    <input type="submit" name="submit" value="Subscribe" class="button">
-   
 </form>
+<p class="para">Copyright &copy; 2018 corazonstudios. All rights reserved</p>
+
 </div>
 
     <!-- <div class="brand">
@@ -855,7 +910,7 @@ abroad. </p>
             <a href="#"> <img src="https://img.icons8.com/bubbles/50/000000/behance.png" /> </a>
         </div>
     </div>
-    <p>Copyright &copy; 2021 corazonstudios. All rights reserved</p> -->
+     -->
 </div>
 </section>
 
