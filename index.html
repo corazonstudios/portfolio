@@ -51,8 +51,6 @@ align-items: center;
 justify-content: center;
 }
 
-
-
    
  nav{
     display: flex;
@@ -63,6 +61,7 @@ justify-content: center;
     z-index: 5;
     box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.9);
    position: relative;
+
 } 
 
 
@@ -678,12 +677,7 @@ left: 140px;
 }
    }
 
-
-
-
-   
   
-
 @media only screen and (min-width:1200px) {
     #services .service-bottom .service-item{
         flex-basis: 22%;
@@ -693,9 +687,22 @@ left: 140px;
 }
 
 
+nav .nav-links a:hover{
+    color: black;
+    transition: all .2s ease;
+    background-color: #ff85e5;
+    padding: 15px;
+}
 
+#about .about-img img{
+    filter: grayscale(1);
+    transition: all .4s linear filter;
+  
+}
 
-
+#about .about-img:hover img{
+    filter: grayscale(0);
+}
 </style>
 
 
@@ -729,10 +736,10 @@ left: 140px;
 
 <nav>
     <div class="navbar-container">
-        <h4><a href="#hero">Corazon<span>Studios</span></a></h4>
+        <h4><a href="#hero"> <span>Corazon </span>Studios</a></h4>
     </div>
     <ul class="nav-links">
-        <li><a class="active" href="https://corazonstudios.github.io/website">Home</a></li>
+        <li><a class="active" href="#hero">Home</a></li>
         <li><a class="#" href="#services">Services</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
